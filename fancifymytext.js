@@ -21,5 +21,8 @@ function moo(){
     words = strings.join('-moo?');
     strings = words.split('!');
     words = strings.join('-moo!');
+    if(words.charAt(words.length-1)!='!'||words.charAt(words.length-1)!='.'||words.charAt(words.length-1)!='?'){
+        words=words+"-moo";
+    }
     document.getElementById('text').value=words;
 }
